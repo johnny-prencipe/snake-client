@@ -1,5 +1,6 @@
 const net = require('net');
 //establishes connection w/ game server
+
 const connect = function() {
   const conn = net.createConnection({
     host: 'localhost',
@@ -13,7 +14,7 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Connection established.');
     conn.write('Name: JFP');
-    conn.write('Move: up');
+    // conn.write('Move: up');
   });
 
   return conn;
