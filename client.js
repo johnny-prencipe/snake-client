@@ -12,11 +12,9 @@ const connect = function() {
   });
   conn.on('connect', () => {
     console.log('Connection established.');
-  });
-  conn.on('connect', () => {
     conn.write('Name: JFP');
   });
-
+  
   return conn;
 }
 
