@@ -13,8 +13,9 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Connection established.');
     conn.write('Name: JFP');
+    conn.write('Move: up');
   });
-  
+
   return conn;
 }
 
