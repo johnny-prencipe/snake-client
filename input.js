@@ -7,6 +7,9 @@ const handleUserInput = (key) => {
     if (key === 'a') connection.write('Move: left')
     if (key === 's') connection.write('Move: down')
     if (key === 'd') connection.write('Move: right')
+    if (key === 'e') connection.write('Say: eat my shorts')
+    if (key === 'q') connection.write('Say: nice try')
+    if (key === 'f') connection.write('Say: good game!')
   });
 }
 
